@@ -1,0 +1,18 @@
+@import "../../variables";
+
+.rectangles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+
+  margin: 131px 0px 171px;
+
+  @media (max-width: $desktop) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: $tablet) {
+    gap: 24px;
+    margin: 44px 0px 47px;
+  }
+}

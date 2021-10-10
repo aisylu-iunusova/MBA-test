@@ -1,0 +1,19 @@
+$large-desktop: 1440px;
+$desktop: 1024px;
+$tablet: 768px;
+$mobile: 320px;
+
+$text-color: #000000;
+$rentangle-text-color: #fff;
+$rentangle-bg-color-red: #ff3535;
+$rentangle-bg-color-black: #2d2c2a;
+
+$module-bg-grey: #f7f7f7;
+
+@mixin text {
+  //   font-family: Styrene A Web;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+}

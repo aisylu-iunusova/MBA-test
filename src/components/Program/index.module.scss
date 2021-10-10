@@ -1,0 +1,44 @@
+@import "../../variables";
+
+.program {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+
+  margin: 0 14px;
+
+  @media (max-width: $tablet) {
+    margin: 0;
+  }
+
+  .modules {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 64px;
+
+    @media (max-width: $tablet) {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  }
+
+  .title {
+    margin-bottom: 54px;
+
+    @include text;
+    font-size: 26px;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 27px;
+      font-size: 22px;
+    }
+  }
+}
+
+.program + .program {
+  margin-top: 68px;
+
+  @media (max-width: $tablet) {
+    margin-top: 34px;
+  }
+}

@@ -1,0 +1,40 @@
+@import "./variables";
+
+.page {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+  padding: 0 77px;
+
+  max-width: $large-desktop;
+  min-width: $mobile;
+
+  @media (max-width: $tablet) {
+    padding: 0 15px;
+  }
+
+  h2 {
+    margin: 71px auto 89px;
+
+    @include text;
+
+    @media (max-width: $tablet) {
+      margin: 28px 0 34px;
+      font-weight: 500;
+      font-size: 28px;
+    }
+    @media (max-width: 375px) {
+      font-size: 24px;
+    }
+  }
+
+  .loader {
+    align-self: center;
+
+    img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
